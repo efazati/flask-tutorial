@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="starter-template">
+    <h1>MSG!</h1>
+    <p class="lead">{{msg}}</p>
+    {% for item in range(0,10) %}
+      <p class="lead">
+        {{item}} is:
+        {% if item % 2 == 0 %}
+          Even
+        {% else %}
+          Odd
+        {% endif %}
+      </p>
+    {% endfor %}
+</div>
+{% endblock %}
